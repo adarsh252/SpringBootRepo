@@ -43,7 +43,7 @@ public class OrderDetailsController {
 		// saving the order details into the database and getting the order id in
 		// response
 		OrderDetails saveOrderDetails = orderService.saveOrderDetails(order);
-		Long id = saveOrderDetails.getId();
+		//Long id = saveOrderDetails.getId();
 		return new ResponseEntity<>("order with id: " + id + " placed!", HttpStatus.CREATED);
 	}
 
